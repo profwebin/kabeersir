@@ -310,9 +310,11 @@ ul li a:hover {
 }
 
 .image img {
-  width: 410px;
-  height: 410px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
+  display: grid;
+  place-items: center;
 }
 
 @media (width < 750px) {
