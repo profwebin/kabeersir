@@ -1,4 +1,133 @@
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.logo a span {
+  color: #8739fa;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu a {
+  display: block;
+  padding: 7px 15px;
+  font-size: 17px;
+  font-weight: 500;
+  transition: 0.2s all ease-in-out;
+  color: #000000;
+}
+
+.menu:hover a {
+  opacity: 0.4;
+}
+
+.menu a:hover {
+  opacity: 1;
+  color: #ffffff;
+}
+
+.menu-icon {
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked ~ .menu {
+  transform: scale(1, 1);
+}
+
+@media only screen and (max-width: 950px) {
+  .menu {
+    flex-direction: column;
+    background-color: #ffffff;
+    align-items: start;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .menu a {
+    margin-left: 12px;
+  }
+
+  .menu li {
+    margin-bottom: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+    color: #000000;
+    font-size: 28px;
+    cursor: pointer
+
+  }
+}
+.image img{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin-left: 120px;
+  margin-top: 30px;
+}
+.htest  img {
+  height: 310px;
+  width: 310px;
+  
+  margin-left: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke: 2px #000000;
+  
+
+}
+
+.abt {
+
+  text-align: center;
+  margin-top: 15px;
+  font-size: 11.9px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 :root {
@@ -155,11 +284,14 @@ ul li a:hover {
 }
 
 .hire__me {
+  
+  text-decoration: #FFFFFF;
   background-color: var(--primary-color);
   color: #ffffff;
 }
 
 .hire__me:hover {
+  text-decoration: none;
   background-color: var(--primary-color-dark);
 }
 
@@ -178,8 +310,9 @@ ul li a:hover {
 }
 
 .image img {
-  width: min(25rem, 90%);
-  border-radius: 100%;
+  width: 410px;
+  height: 410px;
+  border-radius: 50%;
 }
 
 @media (width < 750px) {
