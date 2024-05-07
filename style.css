@@ -460,6 +460,7 @@ ul li a:hover {
   margin: auto;
 }
 .form {
+  
   position: relative;
   z-index: 1;
   background:#FFFFFF;
@@ -547,23 +548,23 @@ ul li a:hover {
 padding-block: 20px;
 }
 .watermark {
-    width: 100%;
-    height: 48px;
-    background: #f1f1f1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  width: 130%;
+  height: 48px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.watermark p {
+  color: #2e2e2e83;
+  font-size: 16px;
+}
+@media screen and (max-width: 480px) {
   .watermark p {
     color: #2e2e2e83;
-    font-size: 16px;
+    font-size: 8px;
   }
-  @media screen and (max-width: 480px) {
-    .watermark p {
-      color: #2e2e2e83;
-      font-size: 8px;
-    }
-    .watermark {
-      height: 30px;
-    }
+  .watermark {
+    height: 30px;
   }
+}
