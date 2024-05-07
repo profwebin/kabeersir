@@ -12,6 +12,13 @@
     <title>Ward 11 | Complaint register</title>
   </head>
   <body>
+    <div id="overlay" class="delete">
+      <div class="loader delete" id="loader">
+          <li class="ball delete"></li>
+          <li class="ball delete"></li>
+          <li class="ball delete"></li>
+      </div>
+  </div>
     <header class="header">
         <nav>
           <div class="logo">
@@ -59,8 +66,19 @@
       <div class="watermark">
         <p>
             © All rights reserved | Designed and developed by
-            <a target="blank" href="https://www.instagram.com/code.cave_media">profweb.in</a>
+            <a target="blank" href="#">profweb.in</a>
         </p>
     </div>
+    <script>
+       // Wait for 3 seconds (3000 milliseconds) and then change the overlay height to 0px
+       setTimeout(function () {
+        document.getElementById("overlay").style.height = "0px";
+      }, 3000);
+
+      // Wait for 3 seconds (3000 milliseconds) and then change the overlay height to 0px
+      setTimeout(function () {
+        document.getElementById("loader").style.margin = "0px 0px 900px 0px";
+      }, 2600);
+      </script>
   </body>
 </html>
