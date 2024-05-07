@@ -548,7 +548,7 @@ ul li a:hover {
 padding-block: 20px;
 }
 .watermark {
-  width: 130%;
+  width: 100%;
   height: 48px;
   background: #ffffff;
   display: flex;
