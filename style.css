@@ -568,3 +568,64 @@ padding-block: 20px;
     height: 30px;
   }
 }
+#loader {
+  width: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px 0px 0px 0px;
+  transition: all 300ms ease-out;
+}
+
+.ball {
+  list-style: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgb(118, 25, 206);
+}
+
+.ball:nth-child(1) {
+  animation: bounce-1 2.1s ease-in-out infinite;
+}
+
+@keyframes bounce-1 {
+  50% {
+    transform: translateY(-90px);
+    scale: 0.3;
+  }
+}
+
+.ball:nth-child(2) {
+  animation: bounce-3 2.1s ease-in-out 0.3s infinite;
+}
+
+@keyframes bounce-2 {
+  50% {
+    transform: translateY(-90px);
+    scale: 0.3;
+  }
+}
+
+.ball:nth-child(3) {
+  animation: bounce-3 2.1s ease-in-out 0.6s infinite;
+}
+
+@keyframes bounce-3 {
+  50% {
+    transform: translateY(-90px);
+    scale: 0.3;
+  }
+}
+#overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fafafa; /* You can customize the overlay style */
+  z-index: 9999; /* Adjust the z-index as needed */
+  transition: height 0.5s; /* Add a transition effect for a smooth change in height */
+}
