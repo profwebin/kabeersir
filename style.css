@@ -221,9 +221,6 @@ ul li a:hover {
   color: var(--secondary-color);
 }
 
-.section {
-  background-color: var(--extra-light);
-}
 
 .section__container {
   min-height: 100vh;
