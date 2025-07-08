@@ -1,103 +1,679 @@
 <!DOCTYPE html>
-<html lang="en" >
-  <head>
+<html lang="ml"> <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-    <title>Ward 11 | Complaint register</title>
-  </head>
-  <body >
+    <title>വാർഡ് 11 | പരാതി രജിസ്റ്റർ & അറിയിപ്പുകൾ</title> </head>
+<body>
     <div id="overlay" class="delete">
-      <div class="loader delete" id="loader">
-          <li class="ball delete"></li>
-          <li class="ball delete"></li>
-          <li class="ball delete"></li>
-      </div>
-  </div>
+        <div class="loader delete" id="loader">
+            <li class="ball delete"></li>
+            <li class="ball delete"></li>
+            <li class="ball delete"></li>
+        </div>
+    </div>
     <header class="header">
         <nav>
-          <div class="logo">
-            <a href="#">WARD<span> 11</span></a>
-          </div>
-          <input type="checkbox" id="menu-toggle">
-          <label for="menu-toggle" class="menu-icon">&#9776;</label>
-          <ul class="menu">
-            <li><a href="#hm">Home</a></li>
-            <li><a href="#reg">Register a Complaint </a></li>
-          </ul>
+            <div class="logo">
+                <a href="#">വാർഡ്<span> 11</span></a> </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+                <li><a href="#home">മുഖ്യ പേജ്</a></li> <li><a href="#about">മെമ്പറെക്കുറിച്ച്</a></li> <li><a href="#updates">വാർഡ് വിശേഷങ്ങൾ</a></li> <li><a href="#register">പരാതി രേഖപ്പെടുത്തുക</a></li> <li><a href="#contact">ബന്ധപ്പെടുക</a></li> </ul>
         </nav>
-      </header>
-    <section class="section" >
-      <div class="section__container">
-        <div class="content" id="hm">
-          <p class="subtitle">kabeer sir</p>
-          <h1 class="title">
-            I'm <span>Parappur Gramapanchayath<br />ward 11 member</span>
-          </h1>
-          <p class="description">
-            നിങ്ങളുടെ പരാതികൾ ഇനി വിരൽതുമ്പത്തിൽ.അടിയന്തര പരാതികളും 
-          നിർദ്ദേശങ്ങളും പറപ്പൂർ 
-          ഗ്രാമപഞ്ചായത്തിലെ വാർഡ് 11ലെ 
-          മെമ്പറുടെ ശ്രദ്ധയിൽ പെടുത്താം
-          </p>
-          <div class="action__btns">
-            <button class="hire__me" i><a href="#reg">Register a Complaint </a></button>
-          </div>
+    </header>
+
+    <section class="section" id="home">
+        <div class="section__container">
+            <div class="content">
+                <p class="subtitle">കബീർ സർ</p>
+                <h1 class="title">
+                    ഞാൻ <span>പറപ്പൂർ ഗ്രാമപഞ്ചായത്ത്<br />വാർഡ് 11 മെമ്പർ</span>
+                </h1>
+                <p class="description">
+                    നിങ്ങളുടെ പരാതികൾ ഇനി വിരൽതുമ്പത്തിൽ. അടിയന്തര പരാതികളും നിർദ്ദേശങ്ങളും പറപ്പൂർ ഗ്രാമപഞ്ചായത്തിലെ വാർഡ് 11-ലെ മെമ്പറുടെ ശ്രദ്ധയിൽപ്പെടുത്താം.
+                </p>
+                <div class="action__btns">
+                    <button class="hire__me"><a href="#register">പരാതി രേഖപ്പെടുത്തുക</a></button>
+                    <button class="portfolio"><a href="#updates">വാർഡ് വിശേഷങ്ങൾ</a></button>
+                </div>
+            </div>
         </div>
-      </div>
-      </div>
     </section>
-    <div class="login-page" id="reg">
-      <div class="login-page" id="reg">
-        <div class="form">
-          <form class="login-form"action="https://formspree.io/f/xleqzvjg" method="POST">
-            <input type="text" name="name" placeholder="പേര് " required/>
-            <input type="tel" name="number" id="phone" placeholder="മൊബൈൽ നമ്പർ " required/>
-            <input class="hu"  name="subject" type="text" placeholder="വിഷയം " required/>
-            <div class="container"></div>
-            <button type="submit" class="btn">SUBMIT</button>
-            <p class="message">This message send for<a href="#">&nbsp;kabeer</a></p>
-          </form>
+
+    <section class="section" id="about">
+        <div class="section__container">
+            <h2>വാർഡ് മെമ്പറെക്കുറിച്ച്</h2>
+            <div class="about-content">
+                <img src="https://media.licdn.com/dms/image/v2/D4E03AQG07S2RCr12JA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1721387982183?e=2147483647&v=beta&t=phfKoe458ElcjJdMc0xyYqSfe14tqjq3-EtEdBbzJ0c" alt="Ward Member Kabeer Sir" class="member-photo">
+                <p>
+                    കബീർ സർ, പറപ്പൂർ ഗ്രാമപഞ്ചായത്തിലെ വാർഡ് 11-ൻ്റെ പ്രതിനിധിയാണ്. ജനങ്ങളുടെ പ്രശ്നങ്ങൾ മനസ്സിലാക്കി അവയ്ക്ക് പരിഹാരം കാണുന്നതിൽ അദ്ദേഹം എന്നും മുന്നിൽ നിന്നിട്ടുണ്ട്. വാർഡിൻ്റെ സമഗ്ര വികസനത്തിനായി അക്ഷീണം പ്രവർത്തിക്കുന്ന ഒരു ജനകീയ നേതാവാണ് അദ്ദേഹം. നിങ്ങളുടെ എല്ലാ പിന്തുണയും സഹകരണവും തുടർന്നും പ്രതീക്ഷിക്കുന്നു.
+                </p>
+                <p>
+                    വാർഡിൻ്റെ ആവശ്യങ്ങൾ ഉന്നയിക്കുന്നതിനും പുതിയ പദ്ധതികൾ ആവിഷ്കരിക്കുന്നതിനും അദ്ദേഹം പ്രതിജ്ഞാബദ്ധനാണ്.
+                </p>
+            </div>
         </div>
-      </div>
-      <div class="watermark">
+    </section>
+
+    <section class="section" id="updates">
+        <div class="section__container">
+            <h2>വാർഡ് വിശേഷങ്ങൾ / അറിയിപ്പുകൾ</h2>
+            <div class="updates-grid">
+                <div class="update-card">
+                    <h3>പുതിയ കുടിവെള്ള പദ്ധതി</h3>
+                    <p>വാർഡിൽ പുതിയ കുടിവെള്ള പദ്ധതിക്ക് തുടക്കമായി. എല്ലാ വീടുകളിലും ശുദ്ധജലം എത്തിക്കുക എന്നതാണ് ലക്ഷ്യം.</p>
+                    <span>തീയതി: 2025 ജൂലൈ 10</span>
+                </div>
+                <div class="update-card">
+                    <h3>റോഡ് നവീകരണം</h3>
+                    <p>പ്രധാന റോഡുകളുടെ നവീകരണ പ്രവർത്തനങ്ങൾ ആരംഭിച്ചു. ഗതാഗത തടസ്സങ്ങൾ ഒഴിവാക്കാൻ എല്ലാവരും സഹകരിക്കുക.</p>
+                    <span>തീയതി: 2025 ജൂലൈ 8</span>
+                </div>
+                <div class="update-card">
+                    <h3>ആരോഗ്യ ക്യാമ്പ്</h3>
+                    <p>സൗജന്യ ആരോഗ്യ പരിശോധനാ ക്യാമ്പ് അടുത്ത ആഴ്ച വാർഡ് ഓഫീസിൽ വെച്ച് നടത്തുന്നു. എല്ലാവരും പങ്കെടുക്കുക.</p>
+                    <span>തീയതി: 2025 ജൂലൈ 15</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section login-page" id="register">
+        <div class="section__container">
+            <h2>പരാതി രേഖപ്പെടുത്തുക</h2>
+            <div class="form">
+                <form class="login-form" action="https://formspree.io/f/xleqzvjg" method="POST">
+                    <input type="text" name="name" placeholder="പേര്" required/>
+                    <input type="tel" name="number" id="phone" placeholder="മൊബൈൽ നമ്പർ" required/>
+                    <textarea name="complaint_details" placeholder="നിങ്ങളുടെ പരാതി/നിർദ്ദേശം ഇവിടെ രേഖപ്പെടുത്തുക" rows="5" required></textarea>
+                    <button type="submit" class="btn">സമർപ്പിക്കുക</button>
+                    <p class="message">ഈ സന്ദേശം <a href="#">കബീർ</a> സാറിന് അയക്കുന്നു</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="section__container">
+            <h2>ബന്ധപ്പെടുക</h2>
+            <div class="contact-info">
+                <p><i class="ri-map-pin-line"></i> പറപ്പൂർ ഗ്രാമപഞ്ചായത്ത്, വാർഡ് 11 ഓഫീസ്</p>
+                <p><i class="ri-phone-line"></i> +91 XXXXXXXXXX</p>
+                <p><i class="ri-mail-line"></i> member11@email.com</p>
+                <div class="social-links">
+                    <a href="https://wa.me/XXXXXXXXXX" target="_blank"><i class="ri-whatsapp-fill"></i></a>
+                    <a href="#" target="_blank"><i class="ri-facebook-fill"></i></a>
+                    <a href="#" target="_blank"><i class="ri-instagram-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="watermark">
         <p>
-            © All rights reserved | Designed and developed by
-            <a target="blank" href="#">profweb.in</a>
+            © എല്ലാ അവകാശങ്ങളും നിക്ഷിപ്തം | രൂപകൽപ്പന ചെയ്തതും വികസിപ്പിച്ചതും
+            <a target="blank" href="https://profweb.in">profweb.in</a>
         </p>
     </div>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/* Import Noto Sans Malayalam for Malayalam text */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;600;700&display=swap");
+
+:root {
+    --primary-color: #0d6efd; /* A vibrant blue for primary elements */
+    --primary-color-dark: #0a58ca; /* Darker shade for hover states */
+    --secondary-color: #6c757d; /* A subtle grey for secondary text/elements */
+    --text-dark: #343a40; /* Darker text for readability */
+    --text-light: #f8f9fa; /* Light text for dark backgrounds */
+    --extra-light: #e9ecef; /* Very light grey for backgrounds */
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    /* Use Noto Sans Malayalam for Malayalam text, Poppins for English fallback */
+    font-family: "Noto Sans Malayalam", "Poppins", sans-serif;
+    background-color: var(--extra-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Overlay and Loader - Keep as is or refine if needed */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: height 0.4s ease-out; /* Smooth transition for closing */
+    overflow: hidden;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: margin 0.4s ease-out; /* Smooth transition for moving */
+}
+
+.ball {
+    width: 15px;
+    height: 15px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: bounce 0.6s infinite alternate;
+}
+
+.ball:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.ball:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+
+/* Header and Navigation */
+.header {
+    background-color: var(--white);
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.logo a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+.menu-icon {
+    display: none; /* Hidden on desktop */
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--text-dark);
+}
+
+#menu-toggle {
+    display: none; /* Hide the checkbox */
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0; /* Remove default margin */
+}
+
+.menu li a {
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: var(--text-dark);
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.menu li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.menu li a:hover::after {
+    width: 100%;
+}
+
+.menu li a:hover {
+    color: var(--primary-color);
+}
+
+
+/* Section styles */
+.section {
+    padding: 4rem 1rem;
+    background-color: var(--white);
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.section:nth-child(even) {
+    background-color: var(--extra-light); /* Alternate section background */
+}
+
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    text-align: center;
+}
+
+.section__container h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section__container h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color-dark);
+    border-radius: 2px;
+}
+
+
+/* Home Section Content */
+.content {
+    padding: 2rem 0;
+}
+
+.content .subtitle {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.content .title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.content .title span {
+    color: var(--primary-color);
+}
+
+.content .description {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.action__btns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.action__btns button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid;
+}
+
+.hire__me {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+.hire__me:hover {
+    background-color: var(--primary-color-dark);
+    border-color: var(--primary-color-dark);
+}
+
+.portfolio {
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.portfolio:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* About Section */
+#about .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+#about .member-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--primary-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#about p {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+/* Ward Updates Section */
+.updates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.update-card {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    transition: transform 0.3s ease;
+    border-left: 5px solid var(--primary-color);
+}
+
+.update-card:hover {
+    transform: translateY(-5px);
+}
+
+.update-card h3 {
+    color: var(--primary-color-dark);
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+}
+
+.update-card p {
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.update-card span {
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    display: block;
+    text-align: right;
+}
+
+/* Complaint Registration Section */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto; /* Adjust as needed */
+    padding-top: 0; /* Section already has padding */
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: var(--white);
+    max-width: 460px; /* Increased width */
+    margin: 0 auto;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1), 0 5px 5px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+}
+
+.form input,
+.form textarea { /* Apply styles to textarea as well */
+    font-family: "Noto Sans Malayalam", "Poppins", sans-serif; /* Apply Malayalam font */
+    outline: 0;
+    background: var(--extra-light);
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.form textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 100px; /* Minimum height for textarea */
+}
+
+.form .btn {
+    font-family: "Noto Sans Malayalam", "Poppins", sans-serif; /* Apply Malayalam font */
+    text-transform: uppercase;
+    outline: 0;
+    background: var(--primary-color);
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: var(--white);
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.form .btn:hover,
+.form .btn:active,
+.form .btn:focus {
+    background-color: var(--primary-color-dark);
+}
+
+.form .message {
+    margin: 15px 0 0;
+    color: var(--secondary-color);
+    font-size: 12px;
+}
+
+.form .message a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+
+/* Contact Section */
+.contact-info {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+}
+
+.contact-info i {
+    margin-right: 0.5rem;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.social-links {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 2rem;
+}
+
+.social-links a {
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Watermark */
+.watermark {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background-color: var(--text-dark);
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.watermark a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-icon {
+        display: block;
+        align-self: flex-end;
+        margin-top: -3.5rem; /* Adjust to align with logo */
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        max-height: 300px; /* Approximate height for menu items */
+    }
+
+    .menu li {
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+
+    .content .title {
+        font-size: 2.5rem;
+    }
+
+    .section__container h2 {
+        font-size: 2rem;
+    }
+
+    #about .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .content .title {
+        font-size: 2rem;
+    }
+
+    .section__container h2 {
+        font-size: 1.8rem;
+    }
+
+    .action__btns {
+        flex-direction: column;
+    }
+
+    .form {
+        padding: 30px;
+    }
+}
+    </style>
+
     <script>
-       // Wait for 3 seconds (3000 milliseconds) and then change the overlay height to 0px
-       setTimeout(function () {
-        document.getElementById("overlay").style.height = "0px";
-      }, 3000);
+        // Wait for 3 seconds (3000 milliseconds) and then change the overlay height to 0px
+        setTimeout(function () {
+            document.getElementById("overlay").style.height = "0px";
+        }, 3000);
 
-      // Wait for 3 seconds (3000 milliseconds) and then change the overlay height to 0px
-      setTimeout(function () {
-        document.getElementById("loader").style.margin = "0px 0px 900px 0px";
-      }, 2600);
+        // Wait for 2.6 seconds (2600 milliseconds) and then change the loader margin
+        setTimeout(function () {
+            document.getElementById("loader").style.margin = "0px 0px 900px 0px";
+        }, 2600);
 
-      </script>
-      <script src="https://smtpjs.com/v3/smtp.js"></script>
-      <script>
-        function sendEmail(){
-          Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "username",
-    Password : "password",
-    To : 'them@website.com',
-    From : "you@isp.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
-        }
-      </script>
-  </body>
+        // Simple smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu after clicking a link
+                const menuToggle = document.getElementById('menu-toggle');
+                if (menuToggle.checked) {
+                    menuToggle.checked = false;
+                }
+            });
+        });
+    </script>
+</body>
 </html>
