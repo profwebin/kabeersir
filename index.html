@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>വാർഡ് 11 | പരാതി രജിസ്റ്റർ & അറിയിപ്പുകൾ</title>
 </head>
@@ -28,13 +28,15 @@
                 <li><a href="#home">മുഖ്യ പേജ്</a></li>
                 <li><a href="#about">മെമ്പറെക്കുറിച്ച്</a></li>
                 <li><a href="#updates">വാർഡ് അറിയിപ്പുകൾ</a></li>
-                <li><a href="#village-updates">ഗ്രാമ വിശേഷങ്ങൾ</a></li> <li><a href="#register">പരാതി രേഖപ്പെടുത്തുക</a></li>
+                <li><a href="#village-updates">ഗ്രാമ വിശേഷങ്ങൾ</a></li>
+                <li><a href="#register">പരാതി രേഖപ്പെടുത്തുക</a></li>
                 <li><a href="#contact">ബന്ധപ്പെടുക</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="section hero-section" id="home"> <div class="section__container">
+    <section class="section hero-section" id="home">
+        <div class="section__container">
             <div class="content">
                 <p class="subtitle">കബീർ സർ</p>
                 <h1 class="title">
@@ -45,9 +47,11 @@
                 </p>
                 <div class="action__btns">
                     <button class="hire__me"><a href="#register">പരാതി രേഖപ്പെടുത്തുക</a></button>
-                    <button class="portfolio"><a href="#village-updates">ഗ്രാമ വിശേഷങ്ങൾ കാണുക</a></button> </div>
+                    <button class="portfolio"><a href="#village-updates">ഗ്രാമ വിശേഷങ്ങൾ കാണുക</a></button>
+                </div>
             </div>
-            <div class="image-gallery"> <img src="hero_img1.jpg" alt="Ward Member Photo 1" class="hero-img">
+            <div class="image-gallery">
+                <img src="hero_img1.jpg" alt="Ward Member Photo 1" class="hero-img">
                 <img src="hero_img2.jpg" alt="Ward Member Photo 2" class="hero-img hidden-on-mobile">
             </div>
         </div>
@@ -70,7 +74,8 @@
 
     <section class="section" id="updates">
         <div class="section__container">
-            <h2>വാർഡ് അറിയിപ്പുകൾ</h2> <div class="updates-grid">
+            <h2>വാർഡ് അറിയിപ്പുകൾ</h2>
+            <div class="updates-grid">
                 <div class="update-card">
                     <h3>പുതിയ കുടിവെള്ള പദ്ധതി</h3>
                     <p>വാർഡിൽ പുതിയ കുടിവെള്ള പദ്ധതിക്ക് തുടക്കമായി. എല്ലാ വീടുകളിലും ശുദ്ധജലം എത്തിക്കുക എന്നതാണ് ലക്ഷ്യം.</p>
@@ -152,25 +157,42 @@
             </div>
         </div>
     </section>
+
+    <div class="watermark">
+        <p>
+            © എല്ലാ അവകാശങ്ങളും നിക്ഷിപ്തം | രൂപകൽപ്പന ചെയ്തതും വികസിപ്പിച്ചതും
+            <a target="blank" href="https://profweb.in">profweb.in</a>
+        </p>
+    </div>
 <style>
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;600;700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"); /* Added 800 weight for bolder headings */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;600;700;800&display=swap"); /* Added 800 weight */
 
 :root {
-    --primary-color: #0d6efd; /* A vibrant blue for primary elements */
-    --primary-color-dark: #0a58ca; /* Darker shade for hover states */
-    --secondary-color: #6c757d; /* A subtle grey for secondary text/elements */
-    --text-dark: #343a40; /* Darker text for readability */
-    --text-light: #f8f9fa; /* Light text for dark backgrounds */
-    --extra-light: #e9ecef; /* Very light grey for backgrounds */
+    --primary-color: #007bff; /* A standard, professional blue */
+    --primary-color-dark: #0056b3; /* Darker blue for hover/active */
+    --secondary-color: #6c757d; /* Standard grey for secondary text */
+    --text-dark: #212529; /* Even darker charcoal for main text for better contrast */
+    --text-light: #f8f9fa; /* Off-white for light text on dark backgrounds */
+    --extra-light: #f8f9fa; /* Changed to a softer off-white for subtle backgrounds */
     --white: #ffffff;
     --max-width: 1200px;
+    --section-padding-desktop: 6rem 1.5rem; /* Increased section padding for desktop */
+    --section-padding-mobile: 4rem 1rem; /* Adjusted for mobile */
+    --border-radius: 10px; /* Slightly more rounded corners for elements */
+    --box-shadow-light: 0 4px 20px rgba(0, 0, 0, 0.07); /* Lighter, broader shadow */
+    --box-shadow-medium: 0 10px 30px rgba(0, 0, 0, 0.15); /* Stronger, broader shadow */
+    --transition-speed: 0.3s ease; /* Consistent transition speed */
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling for all links */
 }
 
 a {
@@ -182,47 +204,55 @@ body {
     font-family: "Noto Sans Malayalam", "Poppins", sans-serif;
     background-color: var(--extra-light);
     color: var(--text-dark);
-    line-height: 1.6;
+    line-height: 1.65; /* Fine-tuned line height for better readability */
+    overflow-x: hidden; /* Prevent horizontal scroll on small screens */
 }
 
-/* Overlay and Loader */
+/* --- Overlay and Loader --- */
 #overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.98);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    transition: height 0.4s ease-out;
+    transition: height 0.7s ease-out, opacity 0.7s ease-out; /* Slower, smoother transition */
     overflow: hidden;
+    opacity: 1;
+}
+
+#overlay.hidden {
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .loader {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: margin 0.4s ease-out;
+    transition: margin 0.7s ease-out, transform 0.7s ease-out;
 }
 
 .ball {
-    width: 15px;
-    height: 15px;
+    width: 18px; /* Slightly larger balls */
+    height: 18px;
     background-color: var(--primary-color);
     border-radius: 50%;
-    margin: 0 5px;
-    animation: bounce 0.6s infinite alternate;
+    margin: 0 10px; /* More margin for better separation */
+    animation: bounce 0.9s infinite alternate; /* Slower bounce */
 }
 
 .ball:nth-child(2) {
-    animation-delay: 0.2s;
+    animation-delay: 0.25s; /* Adjusted delays */
 }
 
 .ball:nth-child(3) {
-    animation-delay: 0.4s;
+    animation-delay: 0.5s;
 }
 
 @keyframes bounce {
@@ -230,16 +260,15 @@ body {
         transform: translateY(0);
     }
     100% {
-        transform: translateY(-15px);
+        transform: translateY(-25px); /* Deeper bounce */
     }
 }
 
-
-/* Header and Navigation */
+/* --- Header and Navigation --- */
 .header {
     background-color: var(--white);
-    padding: 1rem 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 1.2rem 0; /* Slightly more padding */
+    box-shadow: var(--box-shadow-light);
     position: sticky;
     top: 0;
     left: 0;
@@ -250,7 +279,7 @@ body {
 nav {
     max-width: var(--max-width);
     margin: auto;
-    padding: 0 1rem;
+    padding: 0 2rem; /* More padding on desktop */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -258,8 +287,8 @@ nav {
 }
 
 .logo a {
-    font-size: 1.8rem;
-    font-weight: 700;
+    font-size: 2.2rem; /* Larger logo */
+    font-weight: 800; /* Bolder logo */
     color: var(--text-dark);
 }
 
@@ -269,9 +298,16 @@ nav {
 
 .menu-icon {
     display: none;
-    font-size: 2rem;
+    font-size: 2.4rem; /* Even larger icon for easier tapping */
     cursor: pointer;
     color: var(--text-dark);
+    padding: 0.7rem; /* Increased padding for larger tap area */
+    border-radius: var(--border-radius); /* Rounded background for icon */
+    transition: background-color var(--transition-speed);
+}
+
+.menu-icon:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* Subtle hover effect */
 }
 
 #menu-toggle {
@@ -281,27 +317,28 @@ nav {
 .menu {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 2.8rem; /* More space between menu items */
     margin: 0;
 }
 
 .menu li a {
-    padding: 0.5rem 0;
+    padding: 0.8rem 0; /* More vertical padding */
     font-weight: 600;
     color: var(--text-dark);
     position: relative;
-    transition: color 0.3s ease;
+    transition: color var(--transition-speed);
 }
 
 .menu li a::after {
     content: '';
     position: absolute;
-    left: 0;
+    left: 50%; /* Center the underline */
+    transform: translateX(-50%); /* Center the underline */
     bottom: 0;
     width: 0;
-    height: 2px;
+    height: 3px;
     background-color: var(--primary-color);
-    transition: width 0.3s ease;
+    transition: width var(--transition-speed);
 }
 
 .menu li a:hover::after {
@@ -312,37 +349,34 @@ nav {
     color: var(--primary-color);
 }
 
-
-/* Section styles */
+/* --- Section styles --- */
 .section {
-    padding: 4rem 1rem;
+    padding: var(--section-padding-desktop);
     background-color: var(--white);
-    margin-bottom: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    margin: 1.5rem auto; /* More vertical margin between sections */
+    max-width: var(--max-width);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-light);
+    overflow: hidden; /* Ensures content stays within rounded corners */
 }
 
-.section:nth-child(odd) { /* Changed to odd for alternating effect */
+.section:nth-child(even) {
     background-color: var(--extra-light);
 }
-.section:nth-child(even) {
-    background-color: var(--white);
-}
-
 
 .section__container {
-    max-width: var(--max-width);
     margin: auto;
     text-align: center;
 }
 
 .section__container h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    margin-bottom: 2rem;
+    font-size: 3rem; /* Even larger section titles */
+    font-weight: 800; /* Bolder titles */
+    color: var(--primary-color-dark);
+    margin-bottom: 3rem; /* More space below title */
     position: relative;
     display: inline-block;
+    padding-bottom: 12px; /* Space for underline */
 }
 
 .section__container h2::after {
@@ -350,21 +384,19 @@ nav {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -10px;
-    width: 80px;
-    height: 4px;
-    background-color: var(--primary-color-dark);
+    bottom: 0;
+    width: 120px; /* Wider underline */
+    height: 5px;
+    background-color: var(--primary-color);
     border-radius: 2px;
 }
 
-
-/* Hero Section (Home) */
+/* --- Hero Section (Home) --- */
 .hero-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to right, var(--white), var(--extra-light)); /* Subtle gradient */
+    background: linear-gradient(to right, var(--white), var(--extra-light));
+    padding-top: var(--section-padding-desktop);
+    padding-bottom: var(--section-padding-desktop);
+    margin-top: 0; /* Remove top margin for hero section */
 }
 
 .hero-section .section__container {
@@ -372,210 +404,264 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 3rem; /* Space between content and images */
-    text-align: left; /* Align text content to left */
+    gap: 5rem; /* More space between content and images */
+    text-align: left;
 }
 
 .hero-section .content {
-    flex: 1; /* Take up available space */
-    padding: 0; /* Remove extra padding as section has it */
+    flex: 1.3; /* Content takes slightly more space */
+    padding-right: 1rem; /* Small padding to ensure text doesn't touch edge */
+}
+
+.hero-section .subtitle {
+    font-size: 1.3rem; /* Larger subtitle */
+    color: var(--secondary-color);
+    margin-bottom: 0.8rem;
+    font-weight: 600;
 }
 
 .hero-section .title {
-    font-size: 3.5rem; /* Larger title */
-    line-height: 1.1;
+    font-size: 4.5rem; /* Even larger title */
+    line-height: 1.1; /* Tighter line height for large text */
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+    font-weight: 800; /* Make title bolder */
+}
+
+.hero-section .title span {
+    color: var(--primary-color);
 }
 
 .hero-section .description {
-    max-width: none; /* Remove max-width for description here */
-    margin: 0 0 2rem; /* Adjust margin */
+    font-size: 1.2rem; /* Larger description text */
+    color: var(--secondary-color);
+    margin-bottom: 3rem; /* More space below description */
+    max-width: 650px; /* Keep description concise */
+    line-height: 1.7; /* Good line height for body text */
 }
 
 .image-gallery {
-    flex: 0.8; /* Images take less space */
+    flex: 0.7;
     display: flex;
-    gap: 1rem;
+    gap: 2rem; /* More space between images */
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
 .hero-img {
-    width: 180px; /* Smaller image size */
-    height: 250px;
+    width: 250px; /* Even larger image size */
+    height: 350px; /* Taller image */
     object-fit: cover;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* More prominent shadow */
-    transition: transform 0.3s ease;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-medium);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .hero-img:hover {
-    transform: translateY(-8px);
+    transform: translateY(-12px) rotate(0deg) !important; /* Straighter on hover, more lift */
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
 }
 
 .hero-img:first-child {
-    transform: rotate(-5deg); /* Slightly rotate first image */
+    transform: rotate(-8deg); /* More rotation */
 }
 
 .hero-img:last-child {
-    transform: rotate(5deg); /* Slightly rotate last image */
+    transform: rotate(8deg); /* More rotation */
 }
 
-
-/* Action Buttons */
+/* --- Action Buttons --- */
 .action__btns {
     display: flex;
-    gap: 1.5rem; /* Increased gap */
-    justify-content: flex-start; /* Align buttons to the left */
+    gap: 1.8rem; /* More space */
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
 .action__btns button {
-    padding: 0.9rem 2.5rem; /* Larger padding */
-    font-size: 1.1rem; /* Larger font size */
-    border-width: 3px; /* Thicker border */
+    padding: 1.2rem 3rem; /* More generous padding */
+    font-size: 1.2rem; /* Larger font size */
+    font-weight: 700; /* Bolder text for buttons */
+    border: 3px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition-speed), color var(--transition-speed), border-color var(--transition-speed), transform 0.2s ease;
 }
 
+.action__btns button.hire__me {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
 
-/* About Section */
+.action__btns button.hire__me:hover {
+    background-color: var(--primary-color-dark);
+    border-color: var(--primary-color-dark);
+    transform: translateY(-4px); /* More lift */
+}
+
+.action__btns button.portfolio {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.action__btns button.portfolio:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-4px);
+}
+
+/* --- About Section --- */
 #about .about-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
-    text-align: left;
-    margin-top: 2rem;
+    gap: 3rem; /* More space */
+    text-align: center;
+    margin-top: 2.5rem;
 }
 
 #about .member-photo {
-    width: 250px; /* Larger photo */
-    height: 250px;
+    width: 300px; /* Even larger photo */
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
-    border: 7px solid var(--primary-color); /* Thicker border */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    border: 10px solid var(--primary-color); /* Thicker border */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    transition: transform var(--transition-speed);
+}
+
+#about .member-photo:hover {
+    transform: scale(1.08); /* More pronounced zoom on hover */
 }
 
 #about p {
-    max-width: 800px;
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 1.05rem; /* Slightly larger text */
+    max-width: 900px;
+    text-align: justify; /* Keep text justified for now */
+    margin-bottom: 1.5rem;
+    font-size: 1.15rem; /* Slightly larger text */
+    color: var(--text-dark);
+    line-height: 1.75; /* Improved line height */
 }
 
-
-/* Ward Updates Section */
+/* --- Ward Updates Section --- */
 .updates-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.8rem; /* Increased gap */
-    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Larger min-width for cards */
+    gap: 2.5rem; /* More generous gap */
+    margin-top: 3rem;
 }
 
 .update-card {
     background-color: var(--white);
-    padding: 1.8rem; /* Increased padding */
-    border-radius: 10px; /* More rounded corners */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+    padding: 2.2rem; /* More padding */
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-light);
     text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-left: 6px solid var(--primary-color); /* Thicker border */
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    border-left: 8px solid var(--primary-color); /* Thicker, more prominent border */
 }
 
 .update-card:hover {
-    transform: translateY(-7px); /* More pronounced lift */
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px); /* More pronounced lift */
+    box-shadow: var(--box-shadow-medium);
 }
 
 .update-card h3 {
     color: var(--primary-color-dark);
-    margin-bottom: 0.9rem;
-    font-size: 1.5rem; /* Larger font */
+    margin-bottom: 1.2rem;
+    font-size: 1.7rem; /* Larger font */
+    font-weight: 700;
 }
 
 .update-card p {
     color: var(--text-dark);
-    font-size: 1rem; /* Slightly larger text */
-    margin-bottom: 0.7rem;
+    font-size: 1.05rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
 }
 
 .update-card span {
-    font-size: 0.9rem; /* Slightly larger date */
+    font-size: 1rem; /* Slightly larger date */
     color: var(--secondary-color);
     display: block;
     text-align: right;
+    font-weight: 500;
 }
 
-/* Village Updates Section */
+/* --- Village Updates Section --- */
 .village-updates-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem; /* More space between cards */
-    margin-top: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted min-width */
+    gap: 2.8rem; /* More space between cards */
+    margin-top: 3rem;
 }
 
 .village-update-card {
     background-color: var(--white);
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Ensures image corners are rounded */
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-light);
+    overflow: hidden;
     text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
     cursor: pointer;
 }
 
 .village-update-card:hover {
-    transform: translateY(-10px); /* Lifts up more */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-15px); /* Lifts up more */
+    box-shadow: var(--box-shadow-medium);
 }
 
 .village-update-card img {
     width: 100%;
-    height: 200px; /* Fixed height for images */
-    object-fit: cover; /* Ensures image covers area without distortion */
-    border-bottom: 4px solid var(--primary-color); /* Bottom border for image */
+    height: 240px; /* Taller images */
+    object-fit: cover;
+    border-bottom: 6px solid var(--primary-color); /* Thicker border for image */
 }
 
 .village-update-card h3 {
     color: var(--primary-color-dark);
-    font-size: 1.4rem;
-    padding: 1rem 1.2rem 0.5rem;
+    font-size: 1.6rem;
+    padding: 1.5rem 1.8rem 1rem; /* More padding */
+    font-weight: 700;
 }
 
 .village-update-card p {
     color: var(--text-dark);
-    font-size: 0.95rem;
-    padding: 0 1.2rem 1rem;
+    font-size: 1.05rem;
+    padding: 0 1.8rem 1.2rem;
+    line-height: 1.7;
 }
 
 .village-update-card span {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     color: var(--secondary-color);
     display: block;
     text-align: right;
-    padding: 0.5rem 1.2rem 1.2rem;
+    padding: 0.8rem 1.8rem 1.8rem; /* More bottom padding */
+    font-weight: 500;
 }
 
-
-/* Complaint Registration Section */
+/* --- Complaint Registration Section --- */
 .login-page {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: auto;
-    padding-top: 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .form {
     position: relative;
     z-index: 1;
     background: var(--white);
-    max-width: 500px; /* Increased width for form */
+    max-width: 600px; /* Wider form */
     margin: 0 auto;
     padding: 50px; /* More padding */
     text-align: center;
-    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15), 0 8px 10px 0 rgba(0, 0, 0, 0.1); /* Stronger shadow */
-    border-radius: 10px; /* More rounded corners */
+    box-shadow: var(--box-shadow-medium);
+    border-radius: var(--border-radius);
 }
 
 .form input,
@@ -584,17 +670,24 @@ nav {
     outline: 0;
     background: var(--extra-light);
     width: 100%;
-    border: 0;
-    margin: 0 0 18px; /* More space between fields */
-    padding: 18px; /* More padding */
+    border: 1px solid #e0e0e0; /* Softer border */
+    margin: 0 0 22px; /* More space between fields */
+    padding: 20px; /* More padding */
     box-sizing: border-box;
-    font-size: 15px; /* Slightly larger font */
-    border-radius: 6px; /* More rounded corners */
+    font-size: 16.5px; /* Slightly larger font */
+    border-radius: 8px; /* More rounded corners */
+    transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.form input:focus,
+.form textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.3); /* Clearer focus ring */
 }
 
 .form textarea {
     resize: vertical;
-    min-height: 120px; /* Increased min-height */
+    min-height: 180px; /* Increased min-height */
 }
 
 .form .btn {
@@ -604,78 +697,90 @@ nav {
     background: var(--primary-color);
     width: 100%;
     border: 0;
-    padding: 18px; /* More padding */
+    padding: 20px; /* More padding */
     color: var(--white);
-    font-size: 16px; /* Larger font */
+    font-size: 18px; /* Larger font */
+    font-weight: 700;
     cursor: pointer;
-    border-radius: 6px; /* More rounded corners */
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 8px; /* More rounded corners */
+    transition: background-color var(--transition-speed), transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .form .btn:hover,
 .form .btn:active,
 .form .btn:focus {
     background-color: var(--primary-color-dark);
-    transform: translateY(-2px); /* Slight lift on hover */
+    transform: translateY(-3px); /* More lift on hover */
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
 }
 
 .form .message {
-    margin: 18px 0 0;
+    margin: 22px 0 0;
     color: var(--secondary-color);
-    font-size: 13px; /* Slightly larger font */
+    font-size: 15px;
+    line-height: 1.6;
 }
 
 .form .message a {
     color: var(--primary-color);
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: 600;
 }
 
-
-/* Contact Section */
+/* --- Contact Section --- */
 .contact-info {
-    margin-top: 2.5rem;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1.8rem; /* More space between lines */
     align-items: center;
 }
 
 .contact-info p {
     font-size: 1.15rem; /* Slightly larger font */
     color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    line-height: 1.6;
 }
 
 .contact-info i {
-    margin-right: 0.6rem;
+    margin-right: 12px; /* More space for icon */
     color: var(--primary-color);
-    font-size: 1.4rem; /* Larger icons */
+    font-size: 1.6rem; /* Larger icons */
+    min-width: 35px; /* Ensure icon doesn't shrink */
+    text-align: center;
 }
 
 .social-links {
-    margin-top: 2rem;
+    margin-top: 3rem;
     display: flex;
-    gap: 1.8rem; /* More space between icons */
-    font-size: 2.2rem; /* Larger icons */
+    gap: 2.5rem; /* More space between icons */
+    font-size: 2.8rem; /* Larger icons */
 }
 
 .social-links a {
     color: var(--secondary-color);
-    transition: color 0.3s ease, transform 0.2s ease;
+    transition: color var(--transition-speed), transform 0.2s ease;
 }
 
 .social-links a:hover {
     color: var(--primary-color);
-    transform: translateY(-3px); /* Slight lift on hover */
+    transform: translateY(-5px); /* More pronounced lift on hover */
 }
 
-/* Watermark */
+/* --- Watermark --- */
 .watermark {
     text-align: center;
-    padding: 1.8rem 1rem; /* More padding */
+    padding: 1.8rem 1rem;
     background-color: var(--text-dark);
     color: var(--text-light);
-    font-size: 0.95rem; /* Slightly larger font */
+    font-size: 0.95rem;
+    margin-top: 2rem; /* More space above watermark */
+    border-radius: var(--border-radius);
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .watermark a {
@@ -683,107 +788,234 @@ nav {
     font-weight: 600;
 }
 
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .menu-icon {
-        display: block;
-        align-self: flex-end;
-        margin-top: -3.5rem;
-    }
-
-    .menu {
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease-out;
-    }
-
-    #menu-toggle:checked + .menu-icon + .menu {
-        max-height: 400px; /* Increased height for more menu items */
-    }
-
-    .menu li {
-        width: 100%;
-        padding: 0.8rem 0; /* More padding for mobile menu items */
+/* --- Responsive Design --- */
+@media (max-width: 992px) {
+    .section__container {
+        padding: 0 1.5rem; /* Adjust padding for containers */
     }
 
     .hero-section .section__container {
         flex-direction: column;
         text-align: center;
+        gap: 3.5rem;
     }
 
-    .hero-section .title {
-        font-size: 2.8rem;
-    }
-
-    .hero-section .action__btns {
-        justify-content: center; /* Center buttons on mobile */
+    .hero-section .content {
+        order: 2;
+        padding-right: 0; /* Remove specific padding */
     }
 
     .image-gallery {
-        margin-top: 2rem;
-        flex-direction: row; /* Keep row for two images */
+        order: 1;
+        margin-bottom: 2.5rem;
+        gap: 1.5rem;
     }
 
-    .hidden-on-mobile { /* Hide one image on small mobiles */
-        display: none;
+    .hero-img {
+        width: 200px; /* Adjust image size for tablets */
+        height: 280px;
+    }
+
+    .hero-section .title {
+        font-size: 3.5rem;
+    }
+
+    .hero-section .description {
+        max-width: 100%;
+    }
+
+    .action__btns {
+        justify-content: center;
+    }
+
+    .updates-grid,
+    .village-updates-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted min-width for grid items */
+        gap: 2rem;
     }
 
     .section__container h2 {
-        font-size: 2.2rem;
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 0 1.2rem;
     }
 
-    #about .about-content {
-        flex-direction: column;
-        text-align: center;
+    .logo {
+        margin-bottom: 1rem;
     }
 
-    .update-card, .village-update-card {
-        padding: 1.5rem;
+    .menu-icon {
+        top: 1.2rem;
+        right: 1.2rem;
     }
 
-    .village-update-card img {
-        height: 180px;
+    #menu-toggle:checked + .menu-icon + .menu {
+        max-height: 550px; /* Ensure enough height for all menu items */
+        padding-bottom: 1.5rem;
+    }
+
+    .menu li {
+        padding: 1.1rem 0;
+    }
+
+    .menu li a {
+        font-size: 1.2rem; /* Larger font for mobile menu items */
+    }
+
+    .section {
+        padding: var(--section-padding-mobile);
+    }
+
+    .section__container h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .hero-section .title {
+        font-size: 3rem;
+    }
+
+    .hero-section .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-section .description {
+        font-size: 1.05rem;
+    }
+
+    .image-gallery {
+        flex-direction: column; /* Stack images on most mobile screens */
+        gap: 1.5rem;
+    }
+
+    .hero-img {
+        width: 180px;
+        height: 250px;
+        transform: rotate(0deg) !important;
+        margin-bottom: 0; /* Remove specific margin if stacking */
+    }
+
+    .hidden-on-mobile {
+        display: none;
+    }
+
+    #about .member-photo {
+        width: 220px;
+        height: 220px;
+        border-width: 8px;
+    }
+
+    #about p {
+        text-align: left; /* Default to left on smaller screens, can be 'center' if preferred */
+        font-size: 1.05rem;
+    }
+
+    .updates-grid,
+    .village-updates-grid {
+        grid-template-columns: 1fr; /* Single column layout for all cards */
+        gap: 2.2rem;
+    }
+
+    .update-card h3,
+    .village-update-card h3 {
+        font-size: 1.45rem;
+    }
+
+    .form {
+        padding: 40px;
+        max-width: 95%;
+    }
+
+    .form input,
+    .form textarea,
+    .form .btn {
+        padding: 18px;
+        font-size: 16px;
+    }
+
+    .contact-info p {
+        font-size: 1.05rem;
+    }
+
+    .social-links {
+        font-size: 2.5rem;
+        gap: 2rem;
     }
 }
 
 @media (max-width: 480px) {
-    .content .title {
+    .section__container h2 {
         font-size: 2.2rem;
+        margin-bottom: 2rem;
     }
 
-    .section__container h2 {
-        font-size: 1.9rem;
+    .hero-section .title {
+        font-size: 2.5rem;
+    }
+
+    .hero-section .subtitle {
+        font-size: 0.95rem;
+    }
+
+    .hero-section .description {
+        font-size: 0.9rem;
     }
 
     .action__btns {
         flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .action__btns button {
+        padding: 1rem 2.2rem;
+        font-size: 1.05rem;
+    }
+
+    .hero-img {
+        width: 160px;
+        height: 220px;
+    }
+
+    #about .member-photo {
+        width: 180px;
+        height: 180px;
+    }
+
+    .update-card h3,
+    .village-update-card h3 {
+        font-size: 1.3rem;
     }
 
     .form {
-        padding: 35px;
+        padding: 30px;
     }
 
-    .village-updates-grid {
-        grid-template-columns: 1fr; /* Single column on very small screens */
+    .form input,
+    .form textarea,
+    .form .btn {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .contact-info p {
+        font-size: 0.95rem;
+    }
+
+    .contact-info i {
+        font-size: 1.4rem;
+        min-width: 30px;
+    }
+
+    .social-links {
+        font-size: 2.2rem;
+        gap: 1.5rem;
     }
 }
 </style>
-    <div class="watermark">
-        <p>
-            © എല്ലാ അവകാശങ്ങളും നിക്ഷിപ്തം | രൂപകൽപ്പന ചെയ്തതും വികസിപ്പിച്ചതും
-            <a target="blank" href="https://profweb.in">profweb.in</a>
-        </p>
-    </div>
-
     <script>
         // Wait for 3 seconds (3000 milliseconds) and then change the overlay height to 0px
         setTimeout(function () {
