@@ -169,21 +169,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;600;700;800&display=swap");
 
 :root {
-    --primary-color: #007bff; /* A standard, professional blue */
-    --primary-color-dark: #0056b3; /* Darker blue for hover/active */
-    --secondary-color: #6c757d; /* Standard grey for secondary text */
-    --text-dark: #212529; /* Even darker charcoal for main text for better contrast */
-    --text-light: #f8f9fa; /* Off-white for light text on dark backgrounds */
-    --bg-light: #f8f9fa; /* Soft off-white for subtle backgrounds */
+    --primary-color: #007bff;
+    --primary-color-dark: #0056b3;
+    --secondary-color: #6c757d;
+    --text-dark: #212529;
+    --text-light: #f8f9fa;
+    --bg-light: #f8f9fa;
     --white: #ffffff;
     --max-width: 1200px;
-    --section-padding-desktop: 6rem 2rem; /* Increased padding for desktop sections */
-    --section-padding-tablet: 5rem 1.5rem; /* Padding for tablets */
-    --section-padding-mobile: 4rem 1rem; /* Padding for mobile */
-    --border-radius: 12px; /* Slightly more rounded corners for elements */
-    --box-shadow-subtle: 0 4px 25px rgba(0, 0, 0, 0.08); /* Broader, softer shadow */
-    --box-shadow-lift: 0 12px 35px rgba(0, 0, 0, 0.18); /* Stronger lift shadow */
-    --transition-speed: 0.35s ease; /* Consistent, slightly slower transition */
+    --section-padding-desktop: 6rem 2rem;
+    --section-padding-tablet: 5rem 1.5rem;
+    --section-padding-mobile: 3rem 1rem; /* Reduced padding for smaller screens */
+    --border-radius: 12px;
+    --box-shadow-subtle: 0 4px 25px rgba(0, 0, 0, 0.08);
+    --box-shadow-lift: 0 12px 35px rgba(0, 0, 0, 0.18);
+    --transition-speed: 0.35s ease;
 }
 
 /* Universal box-sizing and smooth scroll */
@@ -207,8 +207,8 @@ body {
     font-family: "Noto Sans Malayalam", "Poppins", sans-serif;
     background-color: var(--bg-light);
     color: var(--text-dark);
-    line-height: 1.6; /* Optimal line height for readability */
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
 /* --- Loader and Overlay --- */
@@ -223,15 +223,15 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    transition: height 0.8s ease-out, opacity 0.8s ease-out; /* Slower transition for a smoother fade */
+    transition: height 0.8s ease-out, opacity 0.8s ease-out;
     overflow: hidden;
     opacity: 1;
 }
 
-#overlay.delete { /* Assuming 'delete' class is used to remove/hide */
+#overlay.delete {
     height: 0;
     opacity: 0;
-    pointer-events: none; /* Disable interaction once hidden */
+    pointer-events: none;
 }
 
 .loader {
@@ -242,16 +242,16 @@ body {
 }
 
 .ball {
-    width: 20px; /* Larger balls */
+    width: 20px;
     height: 20px;
     background-color: var(--primary-color);
     border-radius: 50%;
-    margin: 0 12px; /* More spacing between balls */
-    animation: bounce 1s infinite alternate; /* Slower, more pronounced bounce */
+    margin: 0 12px;
+    animation: bounce 1s infinite alternate;
 }
 
 .ball:nth-child(2) {
-    animation-delay: 0.3s; /* Adjusted delays */
+    animation-delay: 0.3s;
 }
 
 .ball:nth-child(3) {
@@ -263,14 +263,14 @@ body {
         transform: translateY(0);
     }
     100% {
-        transform: translateY(-30px); /* Deeper bounce */
+        transform: translateY(-30px);
     }
 }
 
 /* --- Header and Navigation --- */
 .header {
     background-color: var(--white);
-    padding: 1.25rem 0; /* Refined padding */
+    padding: 1.25rem 0;
     box-shadow: var(--box-shadow-subtle);
     position: sticky;
     top: 0;
@@ -282,7 +282,7 @@ body {
 nav {
     max-width: var(--max-width);
     margin: auto;
-    padding: 0 2.5rem; /* More horizontal padding for main nav */
+    padding: 0 2.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -290,10 +290,10 @@ nav {
 }
 
 .logo a {
-    font-size: 2.3rem; /* Larger logo */
+    font-size: 2.3rem;
     font-weight: 800;
     color: var(--text-dark);
-    line-height: 1; /* Tighter line height for logo */
+    line-height: 1;
 }
 
 .logo span {
@@ -302,7 +302,7 @@ nav {
 
 .menu-icon {
     display: none;
-    font-size: 2.5rem; /* Even larger icon for easier tapping */
+    font-size: 2.5rem;
     cursor: pointer;
     color: var(--text-dark);
     padding: 0.8rem;
@@ -311,7 +311,7 @@ nav {
 }
 
 .menu-icon:hover {
-    background-color: rgba(0, 0, 0, 0.07); /* Slightly more visible hover */
+    background-color: rgba(0, 0, 0, 0.07);
 }
 
 #menu-toggle {
@@ -321,12 +321,12 @@ nav {
 .menu {
     list-style: none;
     display: flex;
-    gap: 3rem; /* Increased spacing between menu items */
+    gap: 3rem;
     margin: 0;
 }
 
 .menu li a {
-    padding: 0.9rem 0; /* More vertical padding for active area */
+    padding: 0.9rem 0;
     font-weight: 600;
     color: var(--text-dark);
     position: relative;
@@ -340,7 +340,7 @@ nav {
     transform: translateX(-50%);
     bottom: 0;
     width: 0;
-    height: 4px; /* Thicker underline */
+    height: 4px;
     background-color: var(--primary-color);
     transition: width var(--transition-speed);
 }
@@ -357,30 +357,30 @@ nav {
 .section {
     padding: var(--section-padding-desktop);
     background-color: var(--white);
-    margin: 2rem auto; /* Consistent vertical margin for all sections */
+    margin: 2rem auto;
     max-width: var(--max-width);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow-subtle);
-    overflow: hidden; /* Ensures content stays within rounded corners */
+    overflow: hidden;
 }
 
 .section:nth-child(even) {
-    background-color: var(--bg-light); /* Apply light background to even sections */
+    background-color: var(--bg-light);
 }
 
 .section__container {
     margin: auto;
-    text-align: center; /* Default center alignment for section content */
+    text-align: center;
 }
 
 .section__container h2 {
-    font-size: 3.2rem; /* Larger section titles */
+    font-size: 3.2rem;
     font-weight: 800;
     color: var(--primary-color-dark);
-    margin-bottom: 3.5rem; /* More space below title */
+    margin-bottom: 3.5rem;
     position: relative;
-    display: inline-block; /* Allows underline to size to text */
-    padding-bottom: 15px; /* Space for underline */
+    display: inline-block;
+    padding-bottom: 15px;
 }
 
 .section__container h2::after {
@@ -389,44 +389,43 @@ nav {
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
-    width: 130px; /* Wider underline */
-    height: 6px; /* Thicker underline */
+    width: 130px;
+    height: 6px;
     background-color: var(--primary-color);
     border-radius: 3px;
 }
 
 /* --- Hero Section (Home) --- */
 .hero-section {
-    background: linear-gradient(to right, var(--white), var(--bg-light)); /* Using updated background variable */
+    background: linear-gradient(to right, var(--white), var(--bg-light));
     padding-top: var(--section-padding-desktop);
     padding-bottom: var(--section-padding-desktop);
-    margin-top: 0; /* No top margin for the first section */
+    margin-top: 0;
 }
 
 .hero-section .section__container {
     display: flex;
     flex-direction: row;
-    align-items: center; /* Vertically align items in the middle */
+    align-items: center;
     justify-content: space-between;
-    gap: 6rem; /* Increased gap between content and images */
-    text-align: left; /* Align text content to the left */
+    gap: 6rem;
+    text-align: left;
 }
 
 .hero-section .content {
-    flex: 1.4; /* Content takes more space */
-    /* No padding-right needed here, as gap handles spacing */
+    flex: 1.4;
 }
 
 .hero-section .subtitle {
-    font-size: 1.4rem; /* Larger subtitle */
+    font-size: 1.4rem;
     color: var(--secondary-color);
     margin-bottom: 0.8rem;
     font-weight: 600;
 }
 
 .hero-section .title {
-    font-size: 5rem; /* Even larger title for impact */
-    line-height: 1.1; /* Tighter line height for large text */
+    font-size: 5rem;
+    line-height: 1.1;
     color: var(--text-dark);
     margin-bottom: 2.2rem;
     font-weight: 800;
@@ -437,26 +436,26 @@ nav {
 }
 
 .hero-section .description {
-    font-size: 1.25rem; /* Larger description text */
+    font-size: 1.25rem;
     color: var(--secondary-color);
-    margin-bottom: 3.5rem; /* More space below description */
-    max-width: 700px; /* Maintain readable line length */
+    margin-bottom: 3.5rem;
+    max-width: 700px;
     line-height: 1.7;
 }
 
 .image-gallery {
     flex: 0.6;
     display: flex;
-    gap: 2.5rem; /* More space between images */
+    gap: 2.5rem;
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 1rem; /* Add some padding to prevent images touching edges on smaller desktop */
+    padding: 1rem;
 }
 
 .hero-img {
-    width: 280px; /* Even larger image size */
-    height: 380px; /* Taller image */
+    width: 280px;
+    height: 380px;
     object-fit: cover;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow-lift);
@@ -464,29 +463,29 @@ nav {
 }
 
 .hero-img:hover {
-    transform: translateY(-15px) rotate(0deg) !important; /* Straighter on hover, more lift */
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3); /* More intense shadow on hover */
+    transform: translateY(-15px) rotate(0deg) !important;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
 }
 
 .hero-img:first-child {
-    transform: rotate(-10deg); /* More rotation */
+    transform: rotate(-10deg);
 }
 
 .hero-img:last-child {
-    transform: rotate(10deg); /* More rotation */
+    transform: rotate(10deg);
 }
 
 /* --- Action Buttons --- */
 .action__btns {
     display: flex;
-    gap: 2rem; /* Increased space between buttons */
-    justify-content: flex-start; /* Align buttons to the left */
-    flex-wrap: wrap; /* Allow buttons to wrap */
+    gap: 2rem;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .action__btns button {
-    padding: 1.3rem 3.2rem; /* More generous padding */
-    font-size: 1.25rem; /* Larger font size */
+    padding: 1.3rem 3.2rem;
+    font-size: 1.25rem;
     font-weight: 700;
     border: 3px solid var(--primary-color);
     border-radius: var(--border-radius);
@@ -502,7 +501,7 @@ nav {
 .action__btns button.hire__me:hover {
     background-color: var(--primary-color-dark);
     border-color: var(--primary-color-dark);
-    transform: translateY(-5px); /* More lift */
+    transform: translateY(-5px);
 }
 
 .action__btns button.portfolio {
@@ -520,62 +519,62 @@ nav {
 #about .about-content {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center align items */
-    gap: 3.5rem; /* More space */
-    text-align: center; /* Center align text content */
+    align-items: center;
+    gap: 3.5rem;
+    text-align: center;
     margin-top: 2.5rem;
 }
 
 #about .member-photo {
-    width: 320px; /* Even larger photo */
+    width: 320px;
     height: 320px;
     border-radius: 50%;
     object-fit: cover;
-    border: 12px solid var(--primary-color); /* Thicker border */
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35); /* Stronger shadow */
+    border: 12px solid var(--primary-color);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
     transition: transform var(--transition-speed);
 }
 
 #about .member-photo:hover {
-    transform: scale(1.1); /* More pronounced zoom on hover */
+    transform: scale(1.1);
 }
 
 #about p {
-    max-width: 950px; /* Wider text block */
-    text-align: justify; /* Keep text justified for now, consider 'left' for better mobile readability */
-    margin-bottom: 1.8rem; /* More space */
-    font-size: 1.18rem; /* Slightly larger text */
+    max-width: 950px;
+    text-align: justify;
+    margin-bottom: 1.8rem;
+    font-size: 1.18rem;
     color: var(--text-dark);
-    line-height: 1.7; /* Consistent line height */
+    line-height: 1.7;
 }
 
 /* --- Ward Updates Section --- */
 .updates-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); /* Larger min-width for cards */
-    gap: 3rem; /* More generous gap */
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 3rem;
     margin-top: 3.5rem;
 }
 
 .update-card {
     background-color: var(--white);
-    padding: 2.5rem; /* More padding */
+    padding: 2.5rem;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow-subtle);
     text-align: left;
     transition: transform var(--transition-speed), box-shadow var(--transition-speed);
-    border-left: 10px solid var(--primary-color); /* Thicker, more prominent border */
+    border-left: 10px solid var(--primary-color);
 }
 
 .update-card:hover {
-    transform: translateY(-12px); /* More pronounced lift */
+    transform: translateY(-12px);
     box-shadow: var(--box-shadow-lift);
 }
 
 .update-card h3 {
     color: var(--primary-color-dark);
     margin-bottom: 1.3rem;
-    font-size: 1.8rem; /* Larger font */
+    font-size: 1.8rem;
     font-weight: 700;
 }
 
@@ -587,7 +586,7 @@ nav {
 }
 
 .update-card span {
-    font-size: 1.05rem; /* Slightly larger date */
+    font-size: 1.05rem;
     color: var(--secondary-color);
     display: block;
     text-align: right;
@@ -597,8 +596,8 @@ nav {
 /* --- Village Updates Section --- */
 .village-updates-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Adjusted min-width */
-    gap: 3.2rem; /* More space between cards */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3.2rem;
     margin-top: 3.5rem;
 }
 
@@ -613,21 +612,21 @@ nav {
 }
 
 .village-update-card:hover {
-    transform: translateY(-18px); /* Lifts up more */
+    transform: translateY(-18px);
     box-shadow: var(--box-shadow-lift);
 }
 
 .village-update-card img {
     width: 100%;
-    height: 260px; /* Taller images */
+    height: 260px;
     object-fit: cover;
-    border-bottom: 7px solid var(--primary-color); /* Thicker border for image */
+    border-bottom: 7px solid var(--primary-color);
 }
 
 .village-update-card h3 {
     color: var(--primary-color-dark);
     font-size: 1.7rem;
-    padding: 1.8rem 2rem 1.2rem; /* More padding */
+    padding: 1.8rem 2rem 1.2rem;
     font-weight: 700;
 }
 
@@ -643,7 +642,7 @@ nav {
     color: var(--secondary-color);
     display: block;
     text-align: right;
-    padding: 1rem 2rem 2rem; /* More bottom padding */
+    padding: 1rem 2rem 2rem;
     font-weight: 500;
 }
 
@@ -652,7 +651,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: auto; /* Auto height as content dictates */
+    min-height: auto;
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
@@ -661,9 +660,9 @@ nav {
     position: relative;
     z-index: 1;
     background: var(--white);
-    max-width: 650px; /* Wider form */
+    max-width: 650px;
     margin: 0 auto;
-    padding: 60px; /* More padding */
+    padding: 60px;
     text-align: center;
     box-shadow: var(--box-shadow-lift);
     border-radius: var(--border-radius);
@@ -672,27 +671,27 @@ nav {
 .form input,
 .form textarea {
     font-family: "Noto Sans Malayalam", "Poppins", sans-serif;
-    outline: none; /* Remove default outline */
+    outline: none;
     background: var(--bg-light);
     width: 100%;
-    border: 1px solid #d0d0d0; /* Soft border */
-    margin: 0 0 25px; /* More space between fields */
-    padding: 22px; /* More padding */
+    border: 1px solid #d0d0d0;
+    margin: 0 0 25px;
+    padding: 22px;
     box-sizing: border-box;
     font-size: 17px;
-    border-radius: 10px; /* More rounded corners */
+    border-radius: 10px;
     transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
 }
 
 .form input:focus,
 .form textarea:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 5px rgba(0, 123, 255, 0.35); /* Clearer focus ring */
+    box-shadow: 0 0 0 5px rgba(0, 123, 255, 0.35);
 }
 
 .form textarea {
     resize: vertical;
-    min-height: 200px; /* Increased min-height */
+    min-height: 200px;
 }
 
 .form .btn {
@@ -702,12 +701,12 @@ nav {
     background: var(--primary-color);
     width: 100%;
     border: 0;
-    padding: 22px; /* More padding */
+    padding: 22px;
     color: var(--white);
-    font-size: 19px; /* Larger font */
+    font-size: 19px;
     font-weight: 700;
     cursor: pointer;
-    border-radius: 10px; /* More rounded corners */
+    border-radius: 10px;
     transition: background-color var(--transition-speed), transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -715,7 +714,7 @@ nav {
 .form .btn:active,
 .form .btn:focus {
     background-color: var(--primary-color-dark);
-    transform: translateY(-4px); /* More lift on hover */
+    transform: translateY(-4px);
     box-shadow: 0 10px 25px rgba(0, 123, 255, 0.45);
 }
 
@@ -737,12 +736,12 @@ nav {
     margin-top: 3.5rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem; /* More space between lines */
+    gap: 2rem;
     align-items: center;
 }
 
 .contact-info p {
-    font-size: 1.2rem; /* Larger font */
+    font-size: 1.2rem;
     color: var(--text-dark);
     display: flex;
     align-items: center;
@@ -750,18 +749,18 @@ nav {
 }
 
 .contact-info i {
-    margin-right: 15px; /* More space for icon */
+    margin-right: 15px;
     color: var(--primary-color);
-    font-size: 1.8rem; /* Larger icons */
-    min-width: 40px; /* Ensure icon doesn't shrink */
+    font-size: 1.8rem;
+    min-width: 40px;
     text-align: center;
 }
 
 .social-links {
     margin-top: 3.5rem;
     display: flex;
-    gap: 3rem; /* More space between icons */
-    font-size: 3rem; /* Larger icons */
+    gap: 3rem;
+    font-size: 3rem;
 }
 
 .social-links a {
@@ -771,7 +770,7 @@ nav {
 
 .social-links a:hover {
     color: var(--primary-color);
-    transform: translateY(-6px); /* More pronounced lift on hover */
+    transform: translateY(-6px);
 }
 
 /* --- Watermark --- */
@@ -781,7 +780,7 @@ nav {
     background-color: var(--text-dark);
     color: var(--text-light);
     font-size: 0.95rem;
-    margin-top: 2.5rem; /* More space above watermark */
+    margin-top: 2.5rem;
     border-radius: var(--border-radius);
     max-width: var(--max-width);
     margin-left: auto;
@@ -808,19 +807,20 @@ nav {
 
     /* Hero Section Specifics */
     .hero-section .section__container {
-        flex-direction: column; /* Stack content on tablets */
+        flex-direction: column;
         text-align: center;
         gap: 4.5rem;
     }
 
     .hero-section .content {
-        order: 2; /* Content below image */
+        order: 2;
     }
 
     .image-gallery {
-        order: 1; /* Image above content */
+        order: 1;
         margin-bottom: 2.5rem;
         gap: 1.8rem;
+        padding: 0; /* Remove padding from image-gallery itself for better use of space */
     }
 
     .hero-section .title {
@@ -829,23 +829,23 @@ nav {
 
     .hero-section .description {
         font-size: 1.15rem;
-        max-width: 90%; /* Allow description to use more width */
+        max-width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
 
     .action__btns {
-        justify-content: center; /* Center buttons on tablet */
+        justify-content: center;
         gap: 1.5rem;
     }
 
     .hero-img {
         width: 240px;
         height: 320px;
-        transform: rotate(0deg) !important; /* Remove rotation for stacking clarity */
+        transform: rotate(0deg) !important;
     }
 
-    .hero-img:last-child { /* Hide one image on tablets for cleaner layout */
+    .hero-img:last-child {
         display: none;
     }
 
@@ -858,7 +858,7 @@ nav {
 
     #about p {
         font-size: 1.1rem;
-        text-align: center; /* Center align text on tablets for better visual balance */
+        text-align: center;
         max-width: 90%;
     }
 
@@ -881,39 +881,65 @@ nav {
 /* Mobile Devices (max-width 768px) */
 @media (max-width: 768px) {
     nav {
-        padding: 0 1.5rem; /* Adjusted padding for mobile nav */
+        padding: 0 1.2rem;
     }
 
     .logo {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 1.5rem; /* More space below logo */
+        width: auto; /* Allow logo to size naturally */
+        margin-bottom: 0; /* No bottom margin on mobile nav */
+        text-align: left; /* Keep logo left-aligned */
     }
 
     .menu-icon {
-        top: 1.5rem; /* Position burger icon more consistently */
-        right: 1.5rem;
-        font-size: 2.2rem; /* Slightly smaller for mobile */
+        top: 1.2rem; /* Adjusted for better positioning */
+        right: 1.2rem;
+        font-size: 2.2rem;
+        position: absolute; /* Keep it absolutely positioned relative to header */
     }
 
     #menu-toggle:checked + .menu-icon + .menu {
-        max-height: 600px; /* Ensure enough height for all menu items */
-        padding-bottom: 2rem; /* More padding when open */
+        max-height: 600px;
+        padding-bottom: 2rem;
     }
 
+    .menu {
+        flex-direction: column;
+        width: 100%; /* Full width for mobile menu */
+        text-align: center;
+        position: absolute; /* Position menu under logo/icon */
+        top: 60px; /* Position below header */
+        left: 0;
+        background-color: var(--white);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        border-radius: var(--border-radius);
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.4s ease-out;
+    }
+    
+    #menu-toggle:checked ~ .menu { /* Adjusted selector for menu to appear */
+        max-height: 600px; /* Or enough height for content */
+        padding-bottom: 1.5rem;
+    }
+
+
     .menu li {
-        padding: 1.2rem 0; /* More padding for mobile menu items */
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* Subtle separator */
+        padding: 1.2rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .menu li:last-child {
+        border-bottom: none;
     }
 
     .menu li a {
-        font-size: 1.15rem; /* Slightly smaller font for mobile menu items */
-        display: block; /* Make links full width for easier tapping */
+        font-size: 1.15rem;
+        display: block;
     }
 
     .section {
-        padding: var(--section-padding-mobile);
-        margin: 1.5rem auto; /* Less vertical margin on mobile */
+        padding: var(--section-padding-mobile); /* Apply reduced mobile padding */
+        margin: 1.5rem 1rem; /* Adjust horizontal margin for sections */
     }
 
     .section__container h2 {
@@ -928,8 +954,13 @@ nav {
     }
 
     /* Hero Section Mobile */
+    .hero-section {
+        padding-top: var(--section-padding-mobile); /* Apply mobile padding */
+        padding-bottom: var(--section-padding-mobile);
+    }
     .hero-section .title {
-        font-size: 3.5rem; /* Smaller title for mobile */
+        font-size: 3.2rem; /* Slightly larger on this breakpoint */
+        line-height: 1.2;
     }
 
     .hero-section .subtitle {
@@ -939,23 +970,39 @@ nav {
     .hero-section .description {
         font-size: 1rem;
         max-width: 100%;
+        text-align: center; /* Center align description on mobile hero */
+        margin-left: auto;
+        margin-right: auto;
     }
 
+    .action__btns {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 1rem;
+        width: 100%; /* Make buttons take full width */
+    }
+    .action__btns button {
+        width: 90%; /* Buttons take 90% width */
+        margin: auto; /* Center individual buttons */
+        font-size: 1.1rem;
+        padding: 1.1rem 2rem;
+    }
+
+
     .image-gallery {
-        flex-direction: column; /* Ensure images stack */
+        flex-direction: column;
         gap: 1.2rem;
-        padding: 0; /* Remove padding here, section handles it */
+        padding: 0;
     }
 
     .hero-img {
-        width: 180px; /* Adjust size for single image on mobile */
-        height: 250px;
-        margin-bottom: 0; /* Remove specific margin if stacking */
-        box-shadow: var(--box-shadow-subtle); /* Lighter shadow on mobile */
+        width: 200px; /* Adjust size for single image on mobile */
+        height: 280px;
+        margin-bottom: 0;
+        box-shadow: var(--box-shadow-subtle);
     }
 
     .hidden-on-mobile {
-        display: none; /* Always hide the second image on mobile */
+        display: none;
     }
 
     /* About Section Mobile */
@@ -967,153 +1014,66 @@ nav {
 
     #about p {
         font-size: 1rem;
-        text-align: left; /* Prefer left-aligned for long paragraphs on mobile */
+        text-align: left; /* Keep left-aligned for better long paragraph flow */
         max-width: 100%;
-        padding: 0 0.5rem; /* Small horizontal padding for text within about section */
+        padding: 0; /* Remove internal padding here, section padding handles it */
     }
 
     /* Update Cards Mobile */
     .updates-grid,
     .village-updates-grid {
-        grid-template-columns: 1fr; /* Single column layout for all cards */
+        grid-template-columns: 1fr;
         gap: 2rem;
     }
 
     .update-card,
     .village-update-card {
-        padding: 2rem; /* Adjusted padding */
+        padding: 1.8rem; /* Slightly less padding for cards on mobile */
     }
 
     .update-card h3,
     .village-update-card h3 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     .update-card p,
     .village-update-card p {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .village-update-card img {
-        height: 200px; /* Shorter images for mobile cards */
+        height: 180px; /* Shorter images for mobile cards */
         border-bottom-width: 5px;
     }
 
     /* Form Mobile */
     .form {
-        padding: 35px;
-        max-width: 100%;
+        padding: 30px; /* Less padding for form on mobile */
+        max-width: 95%; /* Allow it to take more width */
     }
 
     .form input,
     .form textarea,
     .form .btn {
-        padding: 18px;
-        font-size: 16px;
-        border-radius: 8px;
+        padding: 16px; /* Less padding for form elements */
+        font-size: 15px;
+        margin-bottom: 20px; /* Less margin */
     }
 
     .form textarea {
-        min-height: 150px;
+        min-height: 120px; /* Shorter textarea */
     }
 
     /* Contact Mobile */
+    .contact-info {
+        gap: 1.5rem; /* Less gap for contact info */
+    }
     .contact-info p {
-        font-size: 1.05rem;
+        font-size: 1rem;
     }
 
     .contact-info i {
-        font-size: 1.6rem;
-        min-width: 35px;
-    }
-
-    .social-links {
-        font-size: 2.5rem;
-        gap: 2rem;
-    }
-}
-
-/* Smallest Mobile Devices (max-width 480px) */
-@media (max-width: 480px) {
-    .section__container h2 {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-        padding-bottom: 8px;
-    }
-
-    .section__container h2::after {
-        width: 80px;
-        height: 4px;
-    }
-
-    .hero-section .title {
-        font-size: 2.8rem;
-    }
-
-    .hero-section .subtitle {
-        font-size: 0.9rem;
-    }
-
-    .hero-section .description {
-        font-size: 0.9rem;
-    }
-
-    .action__btns {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .action__btns button {
-        padding: 1rem 2.2rem;
-        font-size: 1.05rem;
-    }
-
-    .hero-img {
-        width: 160px;
-        height: 220px;
-    }
-
-    #about .member-photo {
-        width: 160px;
-        height: 160px;
-        border-width: 6px;
-    }
-
-    #about p {
-        font-size: 0.95rem;
-    }
-
-    .update-card h3,
-    .village-update-card h3 {
-        font-size: 1.35rem;
-    }
-
-    .update-card p,
-    .village-update-card p {
-        font-size: 0.95rem;
-    }
-
-    .form {
-        padding: 25px;
-    }
-
-    .form input,
-    .form textarea,
-    .form .btn {
-        padding: 15px;
-        font-size: 14px;
-    }
-
-    .form textarea {
-        min-height: 120px;
-    }
-
-    .contact-info p {
-        font-size: 0.95rem;
-    }
-
-    .contact-info i {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         min-width: 30px;
     }
 
@@ -1124,7 +1084,98 @@ nav {
 
     .watermark {
         font-size: 0.85rem;
-        padding: 1.5rem 1rem;
+        padding: 1.2rem 0.8rem;
+    }
+}
+
+/* Smallest Mobile Devices (max-width 400px) - targeting very small phones */
+@media (max-width: 400px) {
+    .section__container h2 {
+        font-size: 2rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .section__container h2::after {
+        width: 80px;
+    }
+
+    .hero-section .title {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-section .subtitle {
+        font-size: 0.85rem;
+    }
+
+    .hero-section .description {
+        font-size: 0.85rem;
+    }
+
+    .action__btns button {
+        width: 95%; /* Make buttons almost full width */
+        font-size: 1rem;
+        padding: 0.9rem 1.8rem;
+    }
+
+    .hero-img {
+        width: 140px;
+        height: 200px;
+    }
+
+    #about .member-photo {
+        width: 140px;
+        height: 140px;
+        border-width: 5px;
+    }
+
+    #about p {
+        font-size: 0.9rem;
+    }
+
+    .update-card h3,
+    .village-update-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .update-card p,
+    .village-update-card p {
+        font-size: 0.9rem;
+    }
+
+    .form {
+        padding: 20px;
+    }
+
+    .form input,
+    .form textarea,
+    .form .btn {
+        padding: 12px;
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .form textarea {
+        min-height: 100px;
+    }
+
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+
+    .contact-info i {
+        font-size: 1.3rem;
+        min-width: 25px;
+    }
+
+    .social-links {
+        font-size: 2rem;
+        gap: 1.2rem;
+    }
+
+    .watermark {
+        font-size: 0.8rem;
+        padding: 1rem 0.5rem;
     }
 }
 </style>
